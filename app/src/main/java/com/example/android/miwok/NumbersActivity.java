@@ -1,8 +1,7 @@
 package com.example.android.miwok;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -37,8 +36,6 @@ public class NumbersActivity extends AppCompatActivity {
             index++;
         }
 
-
-        Log.e("Numbers Activity","word at index 0 is "+words.get(0));
 
     }
 }
