@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView numbers=   (TextView)findViewById(R.id.numbers);
 
+
         //Inline definition
             numbers.setOnClickListener(new View.OnClickListener() {
                 @Override
