@@ -2,37 +2,49 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height"
     >
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        />
 
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:id="@+id/text_container"
+    >
 
     <TextView
         android:id="@+id/miowk_text"
         android:layout_width="match_parent"
-        android:layout_height= "wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:textColor="@android:color/white"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textStyle="bold"
         android:text="lutti"
         android:textSize="16sp"
         />
     <TextView
         android:id="@+id/default_text"
         android:layout_width="match_parent"
-        android:layout_height= "wrap_content"
-        android:text="one"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:textColor="@android:color/white"
+       android:text="one"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
         android:textSize="16sp"
 
         />
